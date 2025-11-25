@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Trip Page</title>
+    <meta name="description" content="Explore thrilling white water rafting trips. Choose from beginner, intermediate, and advanced adventures.">
+    <title>White Water Rafting Adventures | Trips</title>
+    <style>
+        .trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+    </style>
 </head>
 <body>
+    <section class="cta">
+  <h2>Ready to Book Your Adventure?</h2>
+  <p>Contact us today to reserve your spot on one of our thrilling rafting trips!</p>
+  <a href="contact.html" class="btn">Contact Us</a>
+</section>
+
+<section class="trips-grid">
+  <article class="trip">
+    <img src="img23.jpeg" alt="Beginner rafting trip on calm waters">
+    <h3>Beginner Rapids Adventure</h3>
+    <p>Perfect for first-timers! Gentle rapids, scenic views, and family-friendly fun.</p>
+  </article>
+
+  <article class="trip">
+    <img src="img26.jpeg" alt="Intermediate rafting trip with moderate rapids">
+    <h3>Intermediate Rapids Challenge</h3>
+    <p>A step up in excitement! Navigate moderate rapids with guidance from our expert guides.</p>
+  </article>
+
+  <article class="trip">
+    <img src="img24.jpeg" alt="Advanced rafting trip with intense rapids">
+    <h3>Advanced Rapids Expedition</h3>
+    <p>For thrill-seekers only! Intense rapids, adrenaline-pumping drops, and unforgettable adventure.</p>
+  </article>
+</section>
+
+<section class="trips-table">
+  <h2>Available Trips</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Trip Name</th>
+        <th>Difficulty</th>
+        <th>Duration</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Beginner Rapids Adventure</td>
+        <td>Easy</td>
+        <td>2 hours</td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>Intermediate Rapids Challenge</td>
+        <td>Moderate</td>
+        <td>4 hours</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Advanced Rapids Expedition</td>
+        <td>Hard</td>
+        <td>6 hours</td>
+        <td>$150</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
     <h1>Our Trip Page</h1>
     <p><li>
         Jinja
