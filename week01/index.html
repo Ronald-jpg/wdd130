@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>index.html | WDD 130</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --link: #0ea5e9;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --accent: #065f46;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f0f4f8 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .nav-link {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-link:hover { border-bottom-color: var(--link); }
+    h1 {
+      font-size: 28px;
+      line-height: 1.2;
+      margin: 8px 0 24px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+      overflow: hidden;
+    }
+    .hero {
+      position: relative;
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: contrast(1.02) saturate(1.05);
+    }
+    .badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #111827;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      border: 1px solid var(--border);
+    }
+    .badge::before {
+      content: "🎒";
+      font-size: 16px;
+    }
+    .content {
+      padding: 22px 22px 24px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .content p { margin: 0 0 14px; }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .dot { opacity: 0.6; }
+    .tree { color: var(--accent); }
+    /* Small screens */
+    @media (max-width: 520px) {
+      h1 { font-size: 22px; }
+      .badge { font-size: 13px; padding: 7px 10px; }
+      .content { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="nav-link" href="#" aria-label="Home Rafting Website">Home Rafting Website</a>
+    </header>
+
+    <h1>KAKAIRE RONALD| WDD 130</h1>
+
+    <section class="card" aria-label="Intro card">
+      <div class="hero">
+        <!-- Replace the src value with your image URL -->
+        <img src="download.jpg" alt="download.jpg" />
+        <span class="badge">BYU Idaho</span>
+      </div>
+      <div class="content">
+        <p><strong>Hello!</strong> My name is kakaire Ronald and I am from Uganda I enjoy building furniture and playing soccer.</p>
+        <p>I am currently studying Web Design and Development. I am excited to learn more about web development and design.</p>
+        <p>I am looking forward to creating my own website and learning more about the industry. I am excited to see what the future holds for me.</p>
+
+        <footer>
+          <span>&copy;2025</span>
+          <span class="tree">🌲</span>
+          <span>Kakaire Ronald</span>
+          <span class="tree">🌲</span>
+          <span class="dot">•</span>
+          <span>Uganda</span>
+        </footer>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
