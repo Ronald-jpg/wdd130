@@ -1,0 +1,247 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | White Water Rafting</title>
+
+    <style>
+        * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #b7a6d6;
+    padding: 1rem 0;
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    background: #e6e6e6;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-info h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== GRID ===== */
+.contact-grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ===== FORM ===== */
+.contact-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    height: 100px;
+}
+
+.checkbox {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.7rem;
+    width: 100%;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+/* ===== EMPLOYEES ===== */
+.employees {
+    background-color: 0;
+    padding: 0rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.employee-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.employee-cards img {
+    width: 150px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+.social-media {
+    display: flex;
+    border: 2px solid black;
+    justify-content: flex-end;
+    background-color: #b7a6d6;
+    
+}
+    </style>
+    <link rel="stylesheet" href="styles/contactus.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="imgg.jpg" alt="Rafting Logo" class="logo">
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Trips</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="contact-info">
+        <h1>White Water Rafting Company</h1>
+        <p>123 Main River Street</p>
+        <p>Kolob, California</p>
+        <p>+1 999 999 9999</p>
+        <p>info@whitewater.com</p>
+    </section>
+
+    <section class="contact-grid">
+
+        <div class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3l1d31209.030381452532!2d=77.86992986196138!3d-4
+31
+5996121971307655l2m3l1f0l2f0l3f013m2 1i1024l21768 4f13.1/5e0!3m2llsen!2sus!4v1675811150761.5m2!1sen!2sus
+ style="border:0" allowfullscreen="" loading="lazy"
+32
+referrerpolicy="no-referer-shen-donngrade"></iframe>
+            <img src="images/map-placeholder.png" alt="Map location">
+        </div>
+
+        <form class="contact-form">
+            <label>
+                Name
+                <input type="text" placeholder="Placeholder">
+            </label>
+
+            <label>
+                Email
+                <input type="email" placeholder="Placeholder">
+            </label>
+
+            <fieldset>
+                <legend>Message Purpose</legend>
+                <label><input type="radio" name="purpose"> General Inquiry</label>
+                <label><input type="radio" name="purpose"> Reservation Question</label>
+                <label><input type="radio" name="purpose"> Website Suggestion</label>
+            </fieldset>
+
+            <label>
+                Message
+                <textarea placeholder="Type here"></textarea>
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox">
+                Please Subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Get in Touch!</button>
+        </form>
+
+    </section>
+
+    <section class="employees">
+        <h2>We Are Here to Serve You</h2>
+
+        <div class="employee-cards">
+            <figure>
+                <img src="j.png" alt="Employee">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+
+            <figure>
+                <img src="m.jpg" alt="Employee">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+
+            <figure>
+                <img src="k.jpg" alt="Employee">
+                <figcaption>Employee Profile</figcaption>
+            </figure>
+        </div>
+    </section>
+
+</main><br>
+<footer>
+    <div class="social-media">
+        <label for="footer">Footer content including social media icons/links</label>
+    <a href="#">
+        <img src="f.png" alt="facebook" height="78">
+    </a>
+    <a href="#">
+        <img src="g.png" alt="Tweeter" height="78">
+    </a>
+    <a href="@">
+        <img src="d.jpg" alt="instogram" height="78">
+    </a>
+    </div>
+</footer>
+
+</body>
+</html>
